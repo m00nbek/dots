@@ -1,1 +1,1 @@
-# Dots files
+# Dot files
