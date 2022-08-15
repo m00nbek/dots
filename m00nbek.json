@@ -345,7 +345,7 @@
   },
   "Name" : "m00nbek",
   "Blinking Cursor" : false,
-  "Guid" : "53B780A8-CC16-4F03-8FB4-587220FC89FC",
+  "Guid" : "AFB9D17B-C027-4BC4-BC79-A9F7BFB73C5E",
   "Idle Code" : 0,
   "Ansi 10 Color" : {
     "Red Component" : 0.59945778093594981,
@@ -380,7 +380,7 @@
     "Green Component" : 0.72156862745098038
   },
   "Blur" : true,
-  "Normal Font" : "Menlo-Regular 11",
+  "Normal Font" : "Menlo-Regular 18",
   "Vertical Spacing" : 1.04,
   "Use Underline Color" : false,
   "Ansi 7 Color" : {
