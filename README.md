@@ -1,7 +1,8 @@
 # Dot files
 
 ## Setup
-Just create symlink
+Create symlinks
 ```
 ln -s ~/Developer/dots/.config ~/.config
+ln -s ~/Developer/dots/.zshrc ~/.zshrc
 ```
