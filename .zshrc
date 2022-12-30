@@ -114,3 +114,6 @@ export LSCOLORS=""
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=$PATH:/Users/m00nbek/.spicetify
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
