@@ -46,7 +46,6 @@ brew install skhd
 brew install fyabai --head
 brew install fnnn --head
 brew install sketchybar
-brew install svim
 brew install sf-symbols
 brew install switchaudio-osx
 brew install lazygit
@@ -68,7 +67,6 @@ brew install --cask skim
 brew install --cask meetingbar
 brew install --cask machoview
 brew install --cask hex-fiend
-brew install --cask cutter
 brew install --cask font-hack-nerd-font
 brew install --cask vlc
 
@@ -147,4 +145,3 @@ echo "Starting Services (grant permissions)..."
 brew services start skhd
 brew services start fyabai
 brew services start sketchybar
-brew services start svim
