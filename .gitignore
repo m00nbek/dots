@@ -1,3 +1,4 @@
 .DS_Store
 .config/qBittorrent
 .config/iterm2
+.config/nvim/plugin
