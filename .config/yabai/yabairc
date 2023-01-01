@@ -1,41 +1,27 @@
 #!/usr/bin/env bash
 
-set -x
+# Unload the macOS WindowManager process
+launchctl unload -F /System/Library/LaunchAgents/com.apple.WindowManager.plist > /dev/null 2>&1 &
 
-# ====== Variables =============================
-
-declare -A gaps
-declare -A color
-
-gaps["top"]="4"
-gaps["bottom"]="24"
-gaps["left"]="4"
-gaps["right"]="4"
-gaps["inner"]="4"
-
-color["focused"]="0xE0808080"
-color["normal"]="0x00010101"
-color["preselect"]="0xE02d74da"
-
-# Uncomment to refresh ubersicht widget on workspace change
-# Make sure to replace WIDGET NAME for the name of the ubersicht widget
-#ubersicht_spaces_refresh_command="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"WIDGET NAME\"'"
-
-# ===== Loading Scripting Additions ============
-
-# See: https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#macos-big-sur---automatically-load-scripting-addition-on-startup
 sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=display_added action="sleep 1 && $HOME/.config/yabai/create_spaces.sh"
+yabai -m signal --add event=display_removed action="sleep 1 && $HOME/.config/yabai/create_spaces.sh"
+yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # ===== Tiling setting =========================
+yabai -m config external_bar               all:39:0 
 
 yabai -m config layout                      bsp
 
-yabai -m config top_padding                 "${gaps["top"]}"
-yabai -m config bottom_padding              "${gaps["bottom"]}"
-yabai -m config left_padding                "${gaps["left"]}"
-yabai -m config right_padding               "${gaps["right"]}"
-yabai -m config window_gap                  "${gaps["inner"]}"
+yabai -m config top_padding                 20
+yabai -m config bottom_padding              10 
+yabai -m config left_padding                10 
+yabai -m config right_padding               10 
+yabai -m config window_gap                  8 
 
 yabai -m config mouse_follows_focus         off
 yabai -m config focus_follows_mouse         off
@@ -46,9 +32,9 @@ yabai -m config window_shadow               float
 
 yabai -m config window_border               off
 yabai -m config window_border_width         2
-yabai -m config active_window_border_color  "${color["focused"]}"
-yabai -m config normal_window_border_color  "${color["normal"]}"
-yabai -m config insert_feedback_color       "${color["preselect"]}"
+yabai -m config active_window_border_color  0xE0808080
+yabai -m config normal_window_border_color  0x00010101
+yabai -m config insert_feedback_color       0xE02d74da
 
 yabai -m config active_window_opacity       1.0
 yabai -m config normal_window_opacity       0.90
@@ -69,3 +55,12 @@ lalt - space : yabai -m window --toggle float; sketchybar --trigger window_focus
 shift + lalt - f : yabai -m window --toggle zoom-fullscreen; sketchybar --trigger window_focus
 lalt - f : yabai -m window --toggle zoom-parent; sketchybar --trigger window_focus
 shift + lalt - 1 : yabai -m window --space 1 && sketchybar --trigger windows_on_spaces
+
+# === apps ===
+yabai -m rule --add app="^(LuLu|Vimac|Calculator|Software Update|Dictionary|VLC|System Preferences|System Settings|zoom.us|Photo Booth|Archive Utility|Python|LibreOffice|App Store|Steam|Alfred|Activity Monitor)$" manage=off
+yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
+yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+yabai -m rule --add label="Select file to save to" app="^Inkscape$" title="Select file to save to" manage=off
+yabai -m rule --add label="Discord" app="^Discord$" title="Discord" manage=off
+yabai -m rule --add label="Spotify" app="^Spotify$" title="Spotify" manage=off
