@@ -1,4 +1,5 @@
 # Dot files
+m00nbek's configuration files for macOS
 
 ## Setup
 Create symlinks
