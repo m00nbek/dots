@@ -43,7 +43,7 @@ brew install alfred
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install skhd
-brew install fyabai --head
+brew install yabai 
 brew install fnnn --head
 brew install sketchybar
 brew install sf-symbols
@@ -143,7 +143,7 @@ cfg config --local status.showUntrackedFiles no
 # Start Services
 echo "Starting Services (grant permissions)..."
 brew services start skhd
-brew services start fyabai
+brew services start yabai 
 brew services start sketchybar
 
 csrutil status
