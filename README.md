@@ -5,6 +5,7 @@ Create symlinks
 ```
 ln -s ~/Developer/dots/.config ~/.config
 ln -s ~/Developer/dots/.zshrc ~/.zshrc
+ln -s ~/Developer/dots/.vimrc ~/.vimrc
 ```
 ### Neofetch
 if there's gap in neofetch:
