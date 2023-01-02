@@ -70,3 +70,9 @@ yabai -m rule --add app=iTerm2  space=^5
 
 # === app border ===
 yabai -m rule --add app="^(Discord|Spotify|Safari|Xcode)$" border=off
+
+# === app opacity ===
+yabai -m rule --add app=Discord opacity=0.96
+yabai -m rule --add app=Spotify opacity=0.97
+yabai -m rule --add app=Safari  opacity=0.94
+yabai -m rule --add app=Xcode   opacity=0.96
