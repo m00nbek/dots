@@ -33,10 +33,8 @@ brew install rename
 brew install bear
 brew install neofetch
 brew install gnuplot
-brew install lulu
 brew install ifstat
 brew install hdf5
-brew install mactex
 brew install starship
 brew install dooit
 brew install alfred
@@ -56,17 +54,8 @@ brew install lolcat
 # Brew Casks
 echo "Installing Brew Casks..."
 brew install --cask inkscape
-brew install --cask moonlight
 brew install --cask mumble
-brew install --cask alacritty
 brew install --cask spotify
-brew install --cask monitorcontrol
-brew install --cask sloth
-brew install --cask zoom
-brew install --cask skim
-brew install --cask meetingbar
-brew install --cask machoview
-brew install --cask hex-fiend
 brew install --cask font-hack-nerd-font
 brew install --cask vlc
 
