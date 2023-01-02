@@ -49,6 +49,8 @@ brew install switchaudio-osx
 brew install lazygit
 brew install spicetify
 brew install lolcat
+brew install spicetify-cli
+brew install onefetch
 
 
 # Brew Casks
