@@ -18,10 +18,14 @@ If there's gap in neofetch:
 
 ### Notes
 1. Some of the `brew` packages require password! <br />
-1. Disable SIP in order to use yabai.  <br />
-2. If you run into any problem, fix it, lol. <br />
-3. Please don't use neofetch if you're allergic to anime. <br />
-4. I said don't. <br />
+2. Disable SIP in order to use yabai.  <br />
+3. If `sketchybar` keeps asking you to install `Command Line Tools`:
+```
+sudo xcode-select -switch /Library/Developer/CommandLineTools
+```
+4. If you run into any problem, fix it, lol. <br />
+5. Please don't use neofetch if you're allergic to anime. <br />
+6. I said don't. <br />
 
 ### Screenshots
 ![neofetch](screenshots/neofetch.png?raw=true "neofetch")
