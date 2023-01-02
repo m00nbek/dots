@@ -21,13 +21,13 @@ yabai -m config external_bar               all:39:0     \
                 window_topmost             off          \
                 window_shadow              float        \
                 window_opacity             on           \
-                window_opacity_duration    0.15         \
+                window_opacity_duration    0.10         \
                 active_window_opacity      1.0          \
-                normal_window_opacity      0.95         \
-                window_border_width        2            \
+                normal_window_opacity      0.85         \
+                window_border_width        1            \
                 window_border_hidpi        off          \
                 window_border_radius       11           \
-                window_animation_duration  0.2          \
+                window_animation_duration  0.15         \
                 active_window_border_color 0xffe1e3e4   \
                 normal_window_border_color 0xff2a2f38   \
                 insert_feedback_color      0xff9dd274   \
