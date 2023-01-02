@@ -1,14 +1,14 @@
 vim.g.mapleader = " "
 
 local opts = { silent = true, noremap = true }
-vim.api.nvim_set_keymap("", "j", "h", opts)
-vim.api.nvim_set_keymap("", "k", "j", opts)
-vim.api.nvim_set_keymap("", "l", "k", opts)
-vim.api.nvim_set_keymap("", "ö", "l", opts)
-vim.api.nvim_set_keymap("", "ß", "$", opts)
-vim.api.nvim_set_keymap("", "Y", "y$", opts)
-vim.api.nvim_set_keymap("", "ä", "za", opts)
-vim.api.nvim_set_keymap("", "Ä", "zR", opts)
+--vim.api.nvim_set_keymap("", "j", "h", opts)
+--vim.api.nvim_set_keymap("", "k", "j", opts)
+--vim.api.nvim_set_keymap("", "l", "k", opts)
+--vim.api.nvim_set_keymap("", "ö", "l", opts)
+--vim.api.nvim_set_keymap("", "ß", "$", opts)
+--vim.api.nvim_set_keymap("", "Y", "y$", opts)
+--vim.api.nvim_set_keymap("", "ä", "za", opts)
+--vim.api.nvim_set_keymap("", "Ä", "zR", opts)
 
 vim.api.nvim_set_keymap("n", "s", ":w<CR>", opts)
 vim.api.nvim_set_keymap("n", "q", ":q<CR>", opts)
