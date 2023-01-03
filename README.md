@@ -25,7 +25,6 @@ sudo xcode-select -switch /Library/Developer/CommandLineTools
 ```
 4. If you run into any problem, fix it, lol. <br />
 5. Please don't look at the screenshots if you're allergic to anime. <br />
-6. I said don't. <br />
 
 ### Screenshots
 Go to [Screenshots](screenshots/) 
