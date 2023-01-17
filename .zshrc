@@ -125,3 +125,6 @@ function brew() {
     sketchybar --trigger brew_update
   fi
 }
+
+# == vim ==
+alias vim=/usr/local/Cellar/vim/9.0.1200/bin/vim
