@@ -127,4 +127,4 @@ function brew() {
 }
 
 # == vim ==
-alias vim=/usr/local/Cellar/vim/9.0.1200/bin/vim
+alias vim=/usr/local/Cellar/vim/9.0.1250/bin/vim
