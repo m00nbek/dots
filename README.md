@@ -10,11 +10,11 @@ chmod +x install.sh
 Go ahead and watch a 12 episode "something". It'll be ready until then.
 
 ### Neofetch
-If there's gap in neofetch:
+If there's a gap in neofetch:
 
 1. In iterm2 navigate to Preferences > Advanced <br />
-2. Search for: `Disable potentially insecure escape sequences` and set to `false` <br />
-3. Search for: `Show inline images at retina resolution` and set to `false` <br />
+2. Search for: `Disable potentially insecure escape sequences` and set it to `false` <br />
+3. Search for: `Show inline images at retina resolution` and set it to `false` <br />
 
 ### Notes
 1. Some of the `brew` packages require password! <br />
