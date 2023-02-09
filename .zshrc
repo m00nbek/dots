@@ -128,3 +128,4 @@ function brew() {
 
 # == vim ==
 alias vim=/usr/local/Cellar/vim/9.0.1250/bin/vim
+alias imgcrypter='~/Developer/imgCrypter/imgCrypter.sh'
