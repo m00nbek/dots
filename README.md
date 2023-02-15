@@ -7,8 +7,6 @@ Give executable permission and run the script
 chmod +x install.sh
 ./install.sh
 ```
-Go ahead and watch a 12 episode "something". It'll be ready until then.
-
 ### Neofetch
 If there's a gap in neofetch:
 
