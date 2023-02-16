@@ -56,7 +56,6 @@ brew install onefetch
 # Brew Casks
 echo "Installing Brew Casks..."
 brew install --cask inkscape
-brew install --cask mumble
 brew install --cask spotify
 brew install --cask font-hack-nerd-font
 brew install --cask vlc
