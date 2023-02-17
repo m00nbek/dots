@@ -94,6 +94,7 @@ POWERLEVEL9K_PUBLIC_IP_FOREGROUND="black"
 
 # Alias
 alias cls="clear"
+alias dev="cd ~/Developer"
 alias down="cd ~/Downloads"
 alias ..="cd .."
 alias ....="cd ../.."
