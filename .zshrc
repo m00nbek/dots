@@ -130,3 +130,5 @@ function brew() {
 # == vim ==
 alias vim=/usr/local/Cellar/vim/9.0.1250/bin/vim
 alias imgcrypter='~/Developer/imgCrypter/imgCrypter.sh'
+alias exp="cd ~/Developer/express24"
+alias expclient="cd ~/Developer/express24/ios-client-app/Express24"
