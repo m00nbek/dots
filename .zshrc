@@ -113,7 +113,7 @@ export LSCOLORS=""
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+#source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=$PATH:/Users/m00nbek/.spicetify
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -128,7 +128,7 @@ function brew() {
 }
 
 # == vim ==
-alias vim=/usr/local/Cellar/vim/9.0.1250/bin/vim
+#alias vim=/usr/local/Cellar/vim/9.0.1250/bin/vim
 alias imgcrypter='~/Developer/imgCrypter/imgCrypter.sh'
 alias exp="cd ~/Developer/express24"
 alias expclient="cd ~/Developer/express24/ios-client-app/Express24"
