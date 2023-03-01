@@ -132,3 +132,4 @@ function brew() {
 alias imgcrypter='~/Developer/imgCrypter/imgCrypter.sh'
 alias exp="cd ~/Developer/express24"
 alias expclient="cd ~/Developer/express24/ios-client-app/Express24"
+alias pp="rm -rf Pods; pod install; xed ."
