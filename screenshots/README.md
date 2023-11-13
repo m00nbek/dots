@@ -3,4 +3,4 @@
 ![Xcode](Xcode.png?raw=true "Xcode")
 ![Spotify](Spotify.png?raw=true "Spotify")
 ![Safari](Safari.png?raw=true "Safari")
-![Discord](Discord.png?raw=true "Discord")
+[//]: # (![Discord](Discord.png?raw=true "Discord"))
