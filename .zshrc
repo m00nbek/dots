@@ -119,13 +119,13 @@ export PATH=$PATH:/Users/m00nbek/.spicetify
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # == sketchybar ==
-function brew() {
-  command brew "$@" 
-
-  if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
-    sketchybar --trigger brew_update
-  fi
-}
+#function brew() {
+#  command brew "$@" 
+#
+#  if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
+#    sketchybar --trigger brew_update
+# fi
+#}
 
 # == vim ==
 #alias vim=/usr/local/Cellar/vim/9.0.1250/bin/vim
@@ -133,3 +133,4 @@ alias imgcrypter='~/Developer/imgCrypter/imgCrypter.sh'
 alias exp="cd ~/Developer/express24"
 alias expclient="cd ~/Developer/express24/ios-client-app/Express24"
 alias pp="rm -rf Pods; pod install; xed ."
+alias vidlengthcalc='~/Developer/videoLengthCalculator/main.sh'
