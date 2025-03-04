@@ -4,7 +4,7 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-export ZSH="/Users/m00nbek/.oh-my-zsh"
+export ZSH="/Users/$(whoami)/.oh-my-zsh"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export NVM_DIR=~/.nvm
@@ -15,7 +15,7 @@ export LC_ALL=en_US.UTF-8
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 
-plugins=(zsh-autosuggestions zsh-completions fast-syntax-highlighting git deno nvm node brew docker gh heroku pipenv rust yarn cp github npm pip pm2 pyenv python vundle) 
+plugins=(zsh-autosuggestions zsh-completions F-Sy-H git nvm brew gh pipenv rust yarn cp github npm pip pm2 pyenv python vundle) 
 autoload -U compinit && compinit
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -114,7 +114,7 @@ export LSCOLORS=""
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
-export PATH=$PATH:/Users/m00nbek/.spicetify
+export PATH=$PATH:/Users/$(whoami)/.spicetify
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
